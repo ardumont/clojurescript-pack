@@ -7,5 +7,5 @@ A pack to setup clojurescript modes.
 
 In your `.emacs-live.el` add this snippet:
 ```elisp
-(live-add-packs '(clojurescript-pack))
+(live-add-packs '("/path/to/clojurescript-pack"))
 ```
