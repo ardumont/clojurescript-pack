@@ -4,7 +4,7 @@
 
 ;;; Code:
 
-;; pre-requisite, install some packs
+(require 'install-packages-pack)
 (install-packs '(clojurescript-mode
                  cljsbuild-mode
                  smartscan))
@@ -14,4 +14,5 @@
 (require 'smartscan)
 (add-hook 'clojurescript-mode-hook (lambda () (smartscan-mode)))
 
+(provide 'clojurescript-pack)
 ;;; clojurescript-pack.el ends here
