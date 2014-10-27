@@ -5,9 +5,9 @@
 ;;; Code:
 
 (require 'install-packages-pack)
-(install-packs '(;; clojurescript-mode
-                 cljsbuild-mode
-                 smartscan))
+(install-packages-pack/install-packs '(;; clojurescript-mode
+                                       cljsbuild-mode
+                                       smartscan))
 
 ;;(add-to-list 'auto-mode-alist '("\.cljs$" . clojurescript-mode))
 
