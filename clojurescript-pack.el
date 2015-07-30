@@ -4,15 +4,12 @@
 
 ;;; Code:
 
-(require 'install-packages-pack)
-(install-packages-pack/install-packs '(;; clojurescript-mode
-                                       cljsbuild-mode
-                                       smartscan))
+(use-package cljsbuild-mode)
+(use-package smartscan)
 
-;;(add-to-list 'auto-mode-alist '("\.cljs$" . clojurescript-mode))
-
-(require 'smartscan)
-;; (add-hook 'clojurescript-mode-hook (lambda () (smartscan-mode)))
+(use-package clojurescript-mode
+  :config
+  (add-hook 'clojurescript-mode-hook 'smartscan-mode))
 
 (provide 'clojurescript-pack)
 ;;; clojurescript-pack.el ends here
